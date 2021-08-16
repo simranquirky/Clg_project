@@ -1,116 +1,239 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-    <title>Register Form</title>    
-        
-</head>    
-<body>    
-    <h2>Registeration Page</h2><br>    
-    <div class="signup">    
-    <form id="signup" method="get" action="login.php">    
-            
-        <input type="text" name="Fname" id="Fname" placeholder="First name" required>    
-        <br><br>    
-            
-        <input type="text" name="Lname" id="Lname" placeholder="Last name" required>    
-        <br><br>
-            
-        <input type="text" name="email" id="email" placeholder="Username" required>    
-        <br><br>
-            
-        <input type="Password" name="Pass" id="Pass" placeholder="Password" required>    
-        <br><br>   
-            
-        <input type="Password" name="Pass" id="Pass" placeholder="Re-type Password" required>    
-        <br><br>
-        <label><b>Gender     
-        </b>    
-        </label>
-        <input type="radio" name="radiogroup1" id="rd1">
-        <label for="rd1">Male</label>
-        <input type="radio" name="radiogroup1" id="rd2">
-        <label for="rd2">Female</label>
-        <br><br>
-        <input type="checkbox" id="cb1" required>
-        <label for="cb1">I agree with terms and conditions</label>
-        <br><br>
-        <input type="checkbox" id="cb2">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP-Login</title>
+    <link rel="stylesheet" type="text/css" href="a.css">
+ 
+  </head>
+
+<body>
+<div class="main">
+    <div class="land left">
+        <img src="https://i.pinimg.com/736x/43/3b/99/433b99d1a55d9e92f0ece2750250a7d7.jpg" alt="farmer_image1"/>
+    </div>
+
+    <div class="portrait left">
+        <img src="https://i.pinimg.com/originals/c1/70/38/c170387bc934412c9aa1acd95e088e0c.jpg" alt="farmer_image1"/>
+    </div>
+
+
+    <centre>
+        <div class="responsive">
+        <center>
+            <div class="gallery">
+                <div class="login">  
+                    
+                      <h2>Regiteration Form</h2>
+                       <form id="login" method="get" action="login.php">
+
+
+
+                     <div class="group">
+                        <input  type="text" class="input"  name="Fname" id="Fname" placeholder="First name" required>
+                    </div>
+                    <div class="group">
+                        <input  type="text" class="input"  name="Lname" id="Lname" placeholder="Last name" required> 
+                    </div>
+                    <div class="group">
+                        <input  type="text" class="input" name="email" id="email" placeholder="Username" required> 
+                    </div>
+                
+
+                    <div class="group">
+                        <input type="password" class="input"   name="Pass" id="Pass" placeholder="Password" required>  
+                    </div>
+                     <div class="group">
+                        <input type="password" class="input"   name="Pass" id="Pass" placeholder="Re-type Password" required>
+                    </div>
+                    <label><b>Gender :    
+                    </b>
+
+
+                   <input type="radio"  name="radiogroup1" id="rd1">
+                        <label class="radio" for="rd1">Male</label>
+                     <input type="radio" name="radiogroup1" id="rd2">
+                        
+
+                     <label for="rd2" class="radio">Female</label><br><br>
+                    
+
+
+                    <input type="checkbox" id="cb1" required>
+           <label for="cb1">I agree with terms and conditions</label>
+           <br><br>
+         <input type="checkbox" id="cb2">
         <label for="cb2">I want to receive the newsletter</label>
-        <br><br>
-        <input class="button" name="register" id="register" type="submit" value="Register" />    
-    </form>     
-</div>    
-</body>  
-<style>
-    body  
+
+                    <div class="group">
+                        <input type="submit" class="button" name="log" id="log" value="REGISTER">
+                    </div>
+                
+                    
+                    </form>
+
+                </div>        
+            </div>
+        </center> 
+        </div>
+    </centre>
+
+    
+</div>
+</body>
+    <style type="text/css">
+        
+        .main{
+  
+  background-color: #89CFF0;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+
+ .responsive {
+  padding: 0 6px;
+  
+  width: 400px;
+   height: 90%;
+  margin-top: 0.8%;
+  margin-left: 25px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+ z-index: 9;
+   position: relative;
+
+}
+.gallery{
+  margin-top: 12px;
+ background-color: white;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 95%;
+  min-height: 95%;
+   border-radius: 15px;
+ 
+}
+ body  
 {  
     margin: 0;  
     padding: 0;  
-    background-color:#6abadeba;  
+    background-color:#317873;  
     font-family: 'Arial';  
 }  
-.signup{  
-        width: 382px;
-        height: 500px;  
+.login{  
+        
         overflow: hidden;  
         margin: auto;  
         margin: 20 0 0 450px;  
-        padding: 80px;  
-        background: #9ce0d3;  
-        border-radius: 15px ;  
+        padding: 20px;  
+       
           
 }  
+.checkbox{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: left;
+}
 h2{  
     text-align: center;  
     color: #277582;  
-    padding: 20px;  
+    padding: 10px;
+
 }  
-label{  
-    color: #040a09;  
+  
+
+span{  
+    color: grey;  
     font-size: 17px;  
 }  
-#Fname{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-}  
-#Lname{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-}
-#email{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-}
-#Pass{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-      
-}  
 
-#register{
-    margin: 10px;
-        border: rgb(7, 13, 17) solid 2px;
-        background-color:#a0b1d1 ;
-        font-weight: bold;
-        border-radius: 10px;
+.input {
+  
+  margin-bottom: 20px;
+  width: 80%;
+  border:none;
+  padding:10px 15px;
+  border-radius: 25px;
+   color: #595959;
+  background: white;
+
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
 }
-body {
-      background-image: url('https://media.smallbiztrends.com/2018/09/shutterstock_1169830042-850x476.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-</style>  
+
+.button{
+   box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+    margin-top: 20px;
+  width: 80%;
+  border:none;
+  padding:10px 15px;
+  border-radius: 25px;
+   color: white;
+  background: #277582;
+}
+.foot-lnk{
+  text-align:center;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+  padding-bottom:20px;
+  color: grey;
+}
+
+.signup{
+  margin-top: 10px;
+
+}
+a{
+  color:#277582;
+}
+
+.land >img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.land{
+  width: 20%;
+  z-index: 1;
+  width: 300px;
+  border: 2px solid white;
+  border-radius: 10px;
+ box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); 
+ position: relative;
+ 
+}
+
+
+.portrait >img{
+  width: 100%;
+  border-radius: 10px;
+  
+
+}
+
+.portrait{
+  
+  width: 350px;
+  border: 2px solid white;
+  border-radius: 10px;
+ box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); 
+ 
+   }
+
+.portrait, .responsive , .land{
+  display: inline-block;
+}
+
+ .left{
+  margin-right: -30px;
+ 
+}
+
+    </style>
+
 </html>
