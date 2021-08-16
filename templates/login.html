@@ -1,97 +1,228 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-    <title>Login Form</title>    
-        
-</head>    
-<body>    
-    <h2>Login Page</h2><br>    
-    <div class="login">    
-    <form id="login" method="get" action="login.php">    
-        <label><b>User Name     
-        </b>    
-        </label>    
-        <input type="text" name="Uname" id="Uname" placeholder="Username">    
-        <br><br>    
-        <label><b>Password     
-        </b>    
-        </label>    
-        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-        <br><br>        
-        <input type="checkbox" id="check">    
-        <span>Remember me</span>    
-        <br><br>  
-        <input type="button" name="log" id="log" value="Log In Here">       
-        <br><br>  
-        <a href="#">Forgot Password</a>    
-    </form>     
-</div>    
-</body>  
-<style>
-    body  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APP-Login</title>
+  
+  </head>
+
+<body>
+<div class="main">
+	<div class="land left">
+		<img src="https://live.staticflickr.com/4076/4777736235_175a07abf0_b.jpg" alt="farmer_image1"/>
+	</div>
+
+	<div class="portrait left">
+		<img src="https://i.pinimg.com/236x/37/7c/9d/377c9d484e409d37a36ea445ecf4751c--rice-crop-people-at-work.jpg" alt="farmer_image1"/>
+	</div>
+
+
+	<centre>
+		<div class="responsive">
+  		<center>
+  			<div class="gallery">
+  				<div class="login">  
+  					<img src="https://krishivani.com/wp-content/uploads/2021/03/krishi-vani-farmer.png" class="logo" alt="logo"/>
+					  <h2>APP name here</h2>
+					   <form id="login" method="get" action="login.php">
+
+
+
+  					 <div class="group">
+          				<input  type="text" class="input" id="Uname" name="username" required placeholder="Username">
+          			</div>
+					<div class="group">
+						<input type="password" class="input"  id="Pass" data-type="password" name="password" placeholder="Password" required>
+					</div>
+					<input type="checkbox" id="check" class="checkbox">    
+					        <span>Remember me</span> 
+					<div class="group">
+						<input type="submit" class="button" name="log" id="log" value="LOG IN">
+					</div>
+				
+					<div class="foot-lnk">
+						<a href="#forgot">Forgot Password?</a>
+					</div>
+
+					<div class="signup">Not a Member? <a href="register.html">Sign Up.</a></div>
+					</form>
+
+				</div>        
+			</div>
+ 		</center> 
+		</div>
+	</centre>
+
+	<div class="portrait right">
+		<img src="https://i.pinimg.com/736x/43/3b/99/433b99d1a55d9e92f0ece2750250a7d7.jpg" alt="farmer_image1"/>
+	</div>
+
+
+	<div class="land right">
+		<img src="https://i.pinimg.com/originals/c1/70/38/c170387bc934412c9aa1acd95e088e0c.jpg" alt="farmer_image1"/>
+	</div>
+
+</div>
+</body>
+    <style type="text/css">
+        .main{
+  
+  background-color: #89CFF0;
+  padding-left: 40px;
+  padding-bottom: 50px;
+}
+
+
+ .responsive {
+  padding: 0 6px;
+  
+  width: 400px;
+   height: 90%;
+  margin-top: 0.8%;
+  margin-left: 25px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 3px solid white;
+   box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+ z-index: 9;
+   position: relative;
+
+}
+.gallery{
+  margin-top: 12px;
+ background-color: white;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 95%;
+  min-height: 95%;
+   border-radius: 15px;
+ 
+}
+ body  
 {  
     margin: 0;  
     padding: 0;  
-    background-color:#6abadeba;  
+    background-color:#317873;  
     font-family: 'Arial';  
 }  
 .login{  
-        width: 382px;  
+        
         overflow: hidden;  
         margin: auto;  
         margin: 20 0 0 450px;  
-        padding: 80px;  
-        background: #23463f;  
-        border-radius: 15px ;  
+        padding: 20px;  
+       
           
 }  
+.checkbox{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  align-content: left;
+}
 h2{  
     text-align: center;  
     color: #277582;  
-    padding: 20px;  
+    padding: 10px;  
 }  
-label{  
-    color: #08ffd1;  
-    font-size: 17px;  
-}  
-#Uname{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-}  
-#Pass{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 3px;  
-    padding-left: 8px;  
-      
-}  
-#log{  
-    width: 300px;  
-    height: 30px;  
-    border: none;  
-    border-radius: 17px;  
-    padding-left: 7px;  
-    color: blue;  
   
-  
-}  
-span{  
-    color: white;  
-    font-size: 17px;  
-}  
-a{  
-    float: right;  
-    background-color: grey;  
+.logo{
+  width: 100px;
+  height: 100px;
+  border-radius: 200px;
+   box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
 }
-body {
-      background-image: url('https://media.smallbiztrends.com/2018/09/shutterstock_1169830042-850x476.jpg');
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-</style>  
+span{  
+    color: grey;  
+    font-size: 17px;  
+}  
+
+.input {
+  
+  margin-top: 20px;
+  width: 80%;
+  border:none;
+  padding:10px 15px;
+  border-radius: 25px;
+   color: #595959;
+  background: white;
+
+  box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+}
+
+.button{
+   box-shadow: 2px 2px 5px #babecc, -5px -5px 10px #ffffff73;
+    margin-top: 20px;
+  width: 80%;
+  border:none;
+  padding:10px 15px;
+  border-radius: 25px;
+   color: white;
+  background: #277582;
+}
+.foot-lnk{
+  text-align:center;
+  border-bottom: 1px solid grey;
+  margin-top: 20px;
+  padding-bottom:20px;
+  color: grey;
+}
+
+.signup{
+  margin-top: 10px;
+
+}
+a{
+  color:#277582;
+}
+
+.land >img{
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.land{
+  width: 20%;
+  z-index: 1;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 10px;
+ box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); 
+ position: relative;
+ 
+}
+
+
+.portrait >img{
+  width: 100%;
+  border-radius: 10px;
+  
+
+}
+
+.portrait{
+  
+  width: 250px;
+  border: 2px solid white;
+  border-radius: 10px;
+ box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19); 
+ 
+   }
+
+.portrait, .responsive , .land{
+  display: inline-block;
+}
+
+ .left{
+  margin-right: -30px;
+ 
+}
+
+ .right{
+  margin-left: -25px;
+  
+}
+    </style>
 </html>
